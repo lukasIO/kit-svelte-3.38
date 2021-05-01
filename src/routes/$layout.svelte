@@ -3,7 +3,13 @@
   import "../app.css";
 </script>
 
-<Header />
+<svelte:head>
+  <meta title="demo app" />
+</svelte:head>
+
+{#if false}
+  <Header />
+{/if}
 
 <main>
   <slot />
